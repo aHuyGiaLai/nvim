@@ -63,6 +63,7 @@ return {
 					{ name = "buffer" },
 					{ name = "path" },
 					{ name = "render-markdown" },
+                    { name = "vim-dadbob-completion" },
 				}),
 			})
 		end,
