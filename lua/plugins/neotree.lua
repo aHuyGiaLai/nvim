@@ -7,7 +7,14 @@ return {
       "nvim-tree/nvim-web-devicons", -- optional, but recommended
     },
     lazy = false, -- neo-tree will lazily load itself
+    
     config = function()
         vim.keymap.set("n", "<leader>v", ":Neotree filesystem reveal left<CR>", {})
+        require("neo-tree").setup({
+            window = {
+                position = "left",
+                width = 30,
+            },
+        }) 
     end,
 }
