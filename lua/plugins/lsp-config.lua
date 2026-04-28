@@ -37,7 +37,6 @@ return {
                 },
             }
             vim.lsp.enable("lua_ls")
-             
             -- nix
             vim.lsp.config["nvim_lsp"] = {
                 capabilities = capabilities,
