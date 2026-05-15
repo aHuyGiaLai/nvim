@@ -37,23 +37,11 @@ return {
                 },
             }
             vim.lsp.enable("lua_ls")
-            -- nix
-            vim.lsp.config["nvim_lsp"] = {
+            -- R
+            vim.lsp.config["r_language_server"] = {
                 capabilities = capabilities,
             }
-            -- nix
-            vim.lsp.config["luasnip"] = {
-                capabilities = capabilities,
-            }
-            vim.lsp.config["buffer"] = {
-                capabilities = capabilities,
-            }
-            vim.lsp.config["path"] = {
-                capabilities = capabilities,
-            }
-            vim.lsp.config["render-markdown"] = {
-                capabilities = capabilities,
-            }
+            vim.lsp.enable("r_language_server")
         end,
     },
 }
